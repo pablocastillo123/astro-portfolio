@@ -21,7 +21,6 @@ export const config = {
   socials: {
     github: "https://github.com",
     linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
   },
   experience: [
     {
