@@ -3,6 +3,8 @@ export interface Experience {
   company: string;
   date: string;
   description: string;
+  location: string;
+  modality:string
 }
 
 export interface Project {
@@ -14,55 +16,46 @@ export interface Project {
 }
 
 export const config = {
-  name: "Alex Dev",
-  role: "Senior Frontend Developer",
-  bio: "Passionate about building accessible, pixel-perfect user interfaces that blend form and function. Experienced in React, Astro, and Tailwind CSS.",
-  email: "alex@example.com",
+  name: "Pablo Castillo",
+  role: "Full Stack Developer",
+  email: "pablo.castillo@gmail.com",
   socials: {
     github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/pablo-castillo-92b039207",
   },
   experience: [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Corp",
-      date: "2023 - Present",
-      description: "Leading the frontend team in rebuilding the core product using Next.js and Tailwind. Improved performance by 40%."
+      title: "Full-Stack Developer",
+      company: "Waku Casa De Software",
+      date: "Febrero 2022 - Presente",
+      location: "Venezuela, Zulia, Maracaibo",
+      modality:"Presencial",
+      description: "Contribuí en la implementación de mejoras, soporte técnico y corrección de errores para un sistema de recaudación de impuestos con más de 100k usuarios registrados en más de 3 estados de Venezuela. Lideré la integración de validaciones de pagos con la banca nacional y la optimización de procesos críticos."
     },
     {
-      title: "Software Engineer",
-      company: "StartUp Inc",
-      date: "2021 - 2023",
-      description: "Developed and maintained multiple React applications. Implemented a comprehensive design system."
+      title: "Full-Stack Developer",
+      company: "a2 Softway",
+      location: "Venezuela, Zulia, Maracaibo",
+      date: "Marzo 2021 - Febrero 2022",
+      modality:"Presencial",
+      description: "Participé en el desarrollo y mantenimiento de un sistema administrativo web (ERP), colaborando en la implementación de funcionalidades clave tanto en el Back-End como en el Front-End para optimizar procesos de gestión empresarial."
     },
     {
-      title: "Junior Developer",
-      company: "Web Agency",
-      date: "2020 - 2021",
-      description: "Collaborated with designers to create responsive landing pages and marketing sites."
+      title: "Web Developer",
+      company: "Insiemp",
+      location: "Venezuela, Zulia, Maracaibo",
+      date: "Marzo 2021 - Febrero 2022",
+      modality:"Presencial",
+      description: "Participé en el diseño y desarrollo de una pizarra virtual interactiva para una plataforma educativa, implementando herramientas colaborativas en tiempo real y nuevas funcionalidades orientadas a optimizar la experiencia de aprendizaje digital."
     }
   ] as Experience[],
   projects: [
     {
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive dashboard for online retailers to manage inventory, sales, and analytics.",
-      tags: ["React", "TypeScript", "Tailwind", "Recharts"],
+      title: "Dashboard B2B",
+      description: "Dashboard B2B es una aplicación web para visualizar y analizar ventas recientes, totales, clientes destacados y distribución de ventas, utilizando gráficos interactivos y tablas filtrables.",
+      tags: ["React", "TypeScript", "Material UI (MUI)", "Redux Toolkit", "Nivo (gráficas)", "React Testing Library", "Vitest", "Vite"],
       link: "#",
-      github: "#",
-    },
-    {
-      title: "Task Management App",
-      description: "A collaborative task management tool with real-time updates and team features.",
-      tags: ["Vue", "Firebase", "Pinia"],
-      link: "#",
-      github: "#",
-    },
-    {
-      title: "Portfolio v1",
-      description: "My previous portfolio built with Gatsby and styled components.",
-      tags: ["Gatsby", "GraphQL", "Styled Components"],
-      link: "#",
-      github: "#",
+      github: "https://github.com/pablocastillo123/dashboard-b2b",
     },
   ] as Project[],
   skills: [
