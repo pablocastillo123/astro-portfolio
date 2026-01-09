@@ -3,32 +3,35 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import Experience from '../components/Experience.astro';
+import Skills from '../components/Skills.astro';
 import Projects from '../components/Projects.astro';
 import Contact from '../components/Contact.astro';
 import { config } from '../config';
 ---
 
 <Layout title={`${config.name} | ${config.role}`}>
-  <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-white/5">
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate backdrop-blur-md border-b border-white/5">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center max-w-5xl">
       <a href="#" class="text-xl font-bold text-blue-500 font-mono">
         &lt;{config.name.split(' ')[0]} /&gt;
       </a>
       
       <ul class="flex gap-8">
-        <li><a href="#about" class="text-sm text-slate-300 hover:text-blue-500 transition-colors">About</a></li>
-        <li><a href="#experience" class="text-sm text-slate-300 hover:text-blue-500 transition-colors">Experience</a></li>
-        <li><a href="#projects" class="text-sm text-slate-300 hover:text-blue-500 transition-colors">Work</a></li>
-        <li><a href="#contact" class="text-sm text-slate-300 hover:text-blue-500 transition-colors">Contact</a></li>
+        <li><a href="#experience" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Experience</a></li>
+        <li><a href="#projects" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Projects</a></li>
+        <li><a href="#skills" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Skills</a></li>
+        <li><a href="#about" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">About</a></li>
+        <li><a href="#contact" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <Hero />
+    <About />
     <Experience />
     <Projects />
-    <About />
+    <Skills />
     <Contact />
   </main>
 </Layout>
