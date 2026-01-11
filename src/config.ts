@@ -13,6 +13,7 @@ export interface Project {
   tags: string[];
   link: string;
   github: string;
+  image?: string;
 }
 
 export const config = {
@@ -30,7 +31,7 @@ export const config = {
       date: "Febrero 2022 - Presente",
       location: "Venezuela, Zulia, Maracaibo",
       modality:"Presencial",
-      description: "Contribuí en la implementación de mejoras, soporte técnico y corrección de errores para un sistema de recaudación de impuestos con más de 100k usuarios registrados en más de 3 estados de Venezuela. Lideré la integración de validaciones de pagos con la banca nacional y la optimización de procesos críticos."
+      description: "Optimicé la experiencia de usuario (UX) y flujos de trámites de un sistema de recaudación de impuestos usado por +100k usuarios activos en +3 estados de Venezuela. Logré integrar con éxito la conciliación de pagos con la banca nacional venezolana y de resolver errores críticos en momentos de alta demanda."
     },
     {
       title: "Full-Stack Developer",
@@ -38,7 +39,7 @@ export const config = {
       location: "Venezuela, Zulia, Maracaibo",
       date: "Marzo 2021 - Febrero 2022",
       modality:"Presencial",
-      description: "Participé en el desarrollo y mantenimiento de un sistema administrativo web (ERP), colaborando en la implementación de funcionalidades clave tanto en el Back-End como en el Front-End para optimizar procesos de gestión empresarial."
+      description: "Participé en el desarrollo y mantenimiento de un sistema de contabilidad web (ERP), colaborando en la implementación de funcionalidades clave tanto en el Back-End como en el Front-End."
     },
     {
       title: "Web Developer",
@@ -51,26 +52,46 @@ export const config = {
   ] as Experience[],
   projects: [
     {
+      title: "Sistema Unico de Trámites (SUT)",
+      description: "El SUT es una plataforma integral de gobierno electrónico que permite aumentar los ingresos a través de la recaudación de impuestos digitalizada y automatizar todos los trámites e interacciones con la ciudadanía desde cualquier computadora o dispositivo móvil. El sistema se utiliza en varios estados de Venezuela como San Cristóbal, Anzoátegui, Yaracuy y Barinas gestionando +100k usuarios activos y procesando miles de transacciones diarias.",
+      tags: ["React", "TypeScript", "Ant Design", "Redux", "NodeJS", "ExpressJS", "PostgreSQL"],
+      image: "/projects/sut.png"
+    },
+    {
+      title: "a2 Contabilidad Web",
+      description: "a2 Contabilidad es un sistema de información financiero diseñado para registrar, clasificar, resumir y reportar las transacciones económicas de una empresa, con el fin de proporcionar información útil para la toma de decisiones financieras y el cumplimiento de las obligaciones fiscales.",
+      tags: ["PHP", "Laravel", "Bootstrap", "MySQL"],
+      image:"/projects/a2contabilidad.png"
+    },
+    {
       title: "Dashboard B2B",
-      description: "Dashboard B2B es una aplicación web para visualizar y analizar ventas recientes, totales, clientes destacados y distribución de ventas, utilizando gráficos interactivos y tablas filtrables.",
+      description: "Dashboard B2B es una aplicación web visual (Front-End) para visualizar y analizar ventas recientes, totales, clientes destacados y distribución de ventas, utilizando gráficos interactivos y tablas filtrables.",
       tags: ["React", "TypeScript", "Material UI (MUI)", "Redux Toolkit", "Nivo (gráficas)", "React Testing Library", "Vitest", "Vite"],
-      link: "#",
+      link: "https://dashboard-b2b-iota.vercel.app/login",
       github: "https://github.com/pablocastillo123/dashboard-b2b",
+      image: "/projects/dashboard-b2b.png"
     },
   ] as Project[],
   skills: [
+    { name: 'Git', icon: 'devicon-git-plain'},
+    { name: "Python", icon: "devicon-python-plain" },
+    { name: "TypeScript", icon: "devicon-typescript-plain" },
+    { name: "NestJS", icon: "devicon-nestjs-plain" },
+    { name: "NodeJS", icon: "devicon-nodejs-plain" },
+    { name: "ExpressJS", icon: "devicon-expressjs-plain" },
+    { name: "Bootstrap", icon: "devicon-bootstrap-plain"},
+    { name: "jQuery", icon: "devicon-jquery-plain" },
+    { name: "TailwindCSS", icon: "devicon-tailwindcss-plain"},
+    { name: "Astro ", icon: "devicon-astro-plain"},
     { name: "React", icon: "devicon-react-original" },
     { name: "React Native", icon: "devicon-react-original" },
-    { name: "PHP", icon: "devicon-php-plain" },
-    { name: "Laravel", icon: "devicon-laravel-plain" },
     { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
-    { name: "MySQL", icon: "devicon-mysql-plain" },
-    { name: "NestJS", icon: "devicon-nestjs-plain" },
     { name: "Prisma", icon: "devicon-prisma-original" },
     { name: "Firebase", icon: "devicon-firebase-plain" },
-    { name: "Socket.io", icon: "devicon-socketio-original" },
-    { name: "Python", icon: "devicon-python-plain" },
     { name: "MongoDB", icon: "devicon-mongodb-plain" },
-    { name: "TypeScript", icon: "devicon-typescript-plain" },
+    { name: "Socket.io", icon: "devicon-socketio-original" },
+    { name: "MySQL", icon: "devicon-mysql-plain" },
+    { name: "PHP", icon: "devicon-php-plain" },
+    { name: "Laravel", icon: "devicon-laravel-plain" },
   ],
 };
