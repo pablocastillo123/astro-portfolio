@@ -1,0 +1,33 @@
+---
+import { config } from '../config';
+---
+
+<section id="certificates" class="py-20 w-full bg-slate-50">
+  <div class="container mx-auto px-6 max-w-5xl">
+    <h2 class="text-3xl font-bold mb-12 text-slate-800 flex items-center gap-4">
+      <span class="text-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+      </span> Certificados
+      <span class="h-px bg-slate-300 flex-grow max-w"></span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {config.certificates.map((cert) => (
+        <div class="flex flex-col gap-4 bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <div class="flex flex-col gap-4 justify-between items-start">
+            <h3 class="text-xl font-bold text-slate-800">{cert.title}</h3>
+            <div class="flex items-center gap-2 w-full">
+              <p class="text-slate-600 font-medium">{cert.issuer}</p>
+              {cert.link && (
+                <a href={cert.link} target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700 transition-colors">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                </a>
+              )}
+            </div>
+          </div>
+          <p class="text-slate-500 text-sm">Emitido el {cert.date}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

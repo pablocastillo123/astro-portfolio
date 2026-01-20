@@ -5,6 +5,7 @@ import About from '../components/About.astro';
 import Experience from '../components/Experience.astro';
 import Skills from '../components/Skills.astro';
 import Projects from '../components/Projects.astro';
+import Certificates from '../components/Certificates.astro';
 import Contact from '../components/Contact.astro';
 import { config } from '../config';
 ---
@@ -21,6 +22,7 @@ import { config } from '../config';
         <li><a href="#experience" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Experiencia</a></li>
         <li><a href="#projects" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Proyectos</a></li>
         <li><a href="#skills" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Skills</a></li>
+        <li><a href="#certificates" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Certificados</a></li>
         <li><a href="#contact" class="text-sm text-slate-600 hover:text-amber-500 transition-colors">Contacto</a></li>
       </ul>
     </nav>
@@ -32,6 +34,7 @@ import { config } from '../config';
     <Experience />
     <Projects />
     <Skills />
-    <Contact />
+    <Certificates />
+    <!-- <Contact /> -->
   </main>
 </Layout>
