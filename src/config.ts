@@ -28,7 +28,7 @@ export const config = {
   role: "Desarrollador Full Stack",
   email: "pablo.castillo@gmail.com",
   socials: {
-    github: "https://github.com",
+    github: "https://github.com/pablocastillo123",
     linkedin: "https://www.linkedin.com/in/pablo-castillo-92b039207",
   },
   experience: [
@@ -38,7 +38,7 @@ export const config = {
       date: "Febrero 2022 - Presente",
       location: "Venezuela, Zulia, Maracaibo",
       modality:"Presencial",
-      description: "Optimicé la experiencia de usuario (UX) y flujos de trámites de un sistema de recaudación de impuestos usado por +100k usuarios activos en +3 estados de Venezuela. Logré integrar con éxito la conciliación de pagos con la banca nacional venezolana y de resolver errores críticos en momentos de alta demanda."
+      description: "Optimicé la experiencia de usuario (UX) y flujos de trámites para un sistema de recaudación de impuestos usado por +100k usuarios activos en +3 estados de Venezuela. Logré integrar con éxito la conciliación de pagos con la banca nacional venezolana y realicé levantamientos de requerimientos in-situ (Alcaldía de San Cristóbal) de implementaciones futuras."
     },
     {
       title: "Desarrollador Full Stack",
@@ -46,33 +46,33 @@ export const config = {
       location: "Venezuela, Zulia, Maracaibo",
       date: "Marzo 2021 - Febrero 2022",
       modality:"Presencial",
-      description: "Participé en el desarrollo y mantenimiento de un sistema de contabilidad web (ERP), colaborando en la implementación de funcionalidades clave tanto en el Back-End como en el Front-End."
+      description: "Desarrollé funcionalidades clave en un sistema de contabilidad web (ERP) tanto en el Back-End (PHP, Laravel, MySQL) como en el Front-End (Bootstrap, HTML, JavaScript, CSS)."
     },
     {
-      title: "Desarrollador Web",
+      title: "Desarrollador Front-End",
       company: "Insiemp",
       location: "Venezuela, Zulia, Maracaibo",
       date: "Marzo 2021 - Febrero 2022",
       modality:"Presencial",
-      description: "Participé en el diseño y desarrollo de una pizarra virtual interactiva para una plataforma educativa, implementando herramientas colaborativas en tiempo real y nuevas funcionalidades orientadas a optimizar la experiencia de aprendizaje digital."
+      description: "Participé en el diseño y desarrollo de una pizarra virtual interactiva para una plataforma educativa, implementando herramientas colaborativas en tiempo real usando Socket.IO asi como nuevas funcionalidades en el Front-End con React."
     }
   ] as Experience[],
   projects: [
     {
       title: "Sistema Único de Trámites (SUT)",
-      description: "El SUT es una plataforma integral de gobierno electrónico que permite aumentar los ingresos a través de la recaudación de impuestos digitalizada y automatizar todos los trámites e interacciones con la ciudadanía desde cualquier computadora o dispositivo móvil. El sistema se utiliza en varios estados de Venezuela como San Cristóbal, Anzoátegui, Yaracuy y Barinas gestionando +100k usuarios activos y procesando miles de transacciones diarias.",
+      description: "El Sistema único de trámites (SUT) es una plataforma integral de gobierno electrónico que permite aumentar los ingresos a través de la recaudación de impuestos digitalizada y automatizar todos los trámites e interacciones con la ciudadanía desde cualquier computadora o dispositivo móvil. El sistema se utiliza en varios estados de Venezuela como San Cristóbal, Anzoátegui, Yaracuy y Barinas gestionando +100k usuarios activos y procesando miles de transacciones diarias.",
       tags: ["React", "TypeScript", "Ant Design", "Redux", "NodeJS", "ExpressJS", "PostgreSQL"],
       image: "/projects/sut.png"
     },
     {
       title: "a2 Contabilidad Web",
-      description: "a2 Contabilidad es un sistema de información financiero diseñado para registrar, clasificar, resumir y reportar las transacciones económicas de una empresa, con el fin de proporcionar información útil para la toma de decisiones financieras y el cumplimiento de las obligaciones fiscales.",
+      description: "Es un sistema de información financiero diseñado para registrar, clasificar, resumir y reportar las transacciones económicas de una empresa, con el fin de proporcionar información útil para la toma de decisiones financieras y el cumplimiento de las obligaciones fiscales.",
       tags: ["PHP", "Laravel", "Bootstrap", "MySQL"],
       image:"/projects/a2contabilidad.png"
     },
     {
       title: "Dashboard B2B",
-      description: "Dashboard B2B es una aplicación web visual (Front-End) para visualizar y analizar ventas recientes, totales, clientes destacados y distribución de ventas, utilizando gráficos interactivos y tablas filtrables.",
+      description: "Este proyecto fue una prueba técnica, la cual consiste en desarrollar un dashboard B2B unicamente el apartado visual (Front-End). Con el fin de visualizar y analizar ventas recientes, totales y distribución de ventas, utilizando gráficos interactivos y tablas filtrables.",
       tags: ["React", "TypeScript", "Material UI (MUI)", "Redux Toolkit", "Nivo (gráficas)", "React Testing Library", "Vitest", "Vite"],
       link: "https://dashboard-b2b-iota.vercel.app/login",
       github: "https://github.com/pablocastillo123/dashboard-b2b",
@@ -81,24 +81,25 @@ export const config = {
   ] as Project[],
   skills: [
     { name: 'Git', icon: 'devicon-git-plain'},
-    { name: "Python", icon: "devicon-python-plain" },
     { name: "TypeScript", icon: "devicon-typescript-plain" },
-    { name: "NestJS", icon: "devicon-nestjs-plain" },
     { name: "NodeJS", icon: "devicon-nodejs-plain" },
-    { name: "ExpressJS", icon: "devicon-expressjs-plain" },
+    { name: "ExpressJS", icon: "devicon-express-original" },
+    { name: "Astro ", icon: "devicon-astro-plain"},
+    { name: "React", icon: "devicon-react-original" },
+    { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
+    { name:'Redux', icon:'devicon-redux-original'},
+    { name: 'Ant Design', icon: 'devicon-antdesign-plain'},
+    { name: "Python", icon: "devicon-python-plain" },
+    { name: "NestJS", icon: "devicon-nestjs-plain" },
     { name: "Bootstrap", icon: "devicon-bootstrap-plain"},
     { name: "jQuery", icon: "devicon-jquery-plain" },
     { name: "TailwindCSS", icon: "devicon-tailwindcss-plain"},
-    { name: 'Ant Design', icon: ''},
-    { name:'Redux', icon:''},
-    { name: "Astro ", icon: "devicon-astro-plain"},
-    { name: "React", icon: "devicon-react-original" },
     { name: "React Native", icon: "devicon-react-original" },
-    { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
     { name: "Prisma", icon: "devicon-prisma-original" },
     { name: "Firebase", icon: "devicon-firebase-plain" },
     { name: "MongoDB", icon: "devicon-mongodb-plain" },
     { name: "Socket.io", icon: "devicon-socketio-original" },
+    { name: "Pug", icon: "devicon-pug-plain" },
     { name: "MySQL", icon: "devicon-mysql-plain" },
     { name: "PHP", icon: "devicon-php-plain" },
     { name: "Laravel", icon: "devicon-laravel-plain" },
@@ -106,7 +107,7 @@ export const config = {
   certificates: [
     {
       title: "Certificado de Inglés",
-      issuer: "CEVAZ",
+      issuer: "Centro Venezolano Americano del Zulia (CEVAZ)",
       date: "2025",
       link: "https://www.cevaz.org/"
     },
