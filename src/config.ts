@@ -74,7 +74,7 @@ export const config = {
       title: "Dashboard B2B",
       description: "Este proyecto fue una prueba técnica, la cual consiste en desarrollar un dashboard B2B unicamente el apartado visual (Front-End). Con el fin de visualizar y analizar ventas recientes, totales y distribución de ventas, utilizando gráficos interactivos y tablas filtrables.",
       tags: ["React", "TypeScript", "Material UI (MUI)", "Redux Toolkit", "Nivo (gráficas)", "React Testing Library", "Vitest", "Vite"],
-      link: "https://dashboard-b2b-iota.vercel.app/login",
+      link: "https://dashboard-b2b-iota.vercel.app",
       github: "https://github.com/pablocastillo123/dashboard-b2b",
       image: "/projects/dashboard-b2b.png"
     },
