@@ -1,5 +1,11 @@
 ---
-import { config } from '../config';
+import type { SiteConfig } from '../config/types';
+
+interface Props {
+  config: SiteConfig;
+}
+
+const { config } = Astro.props;
 ---
 
 <section id="experience" class="py-20 w-full bg-slate-50">
@@ -8,8 +14,7 @@ import { config } from '../config';
       <h2 class="text-3xl font-bold mb-6 text-slate-800 flex items-center gap-4">
         <span class="text-blue-500">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </span> Experiencia
-        <span class="h-px bg-slate-300 flex-grow max-w-xs"></span>
+        </span> {config.titles.experience}
       </h2>
     </div>
     

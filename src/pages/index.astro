@@ -8,19 +8,19 @@ import Skills from '../components/Skills.astro';
 import Projects from '../components/Projects.astro';
 import Certificates from '../components/Certificates.astro';
 import Contact from '../components/Contact.astro';
-import { config } from '../config';
+import { es } from '../config/es';
 ---
 
-<Layout title={`${config.name} | ${config.role}`}>
-  <Header />
+<Layout title={`${es.name} | ${es.role}`} lang="es">
+  <Header config={es} currentLang="es" />
 
   <main>
-    <Hero />
-    <About />
-    <Experience />
-    <Projects />
-    <Skills />
-    <Certificates />
-    <Contact />
+    <Hero config={es} />
+    <About config={es} />
+    <Experience config={es} />
+    <Projects config={es} />
+    <Skills config={es} />
+    <Certificates config={es} />
+    <Contact config={es} />
   </main>
 </Layout>

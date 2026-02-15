@@ -1,12 +1,18 @@
 ---
-import { config } from '../config';
+import type { SiteConfig } from '../config/types';
+
+interface Props {
+  config: SiteConfig;
+}
+
+const { config } = Astro.props;
 ---
 
 <section id="contact" class="py-20 w-full bg-slate-950 text-center text-slate-100">
   <div class="container mx-auto px-6 max-w-5xl">
     <div class="max-w-2xl mx-auto">
-     <h2 class="text-blue-500 font-mono mb-4 text-sm tracking-widest">¿Qué sigue?</h2>
-     <h2 class="text-4xl md:text-5xl font-bold text-slate-100 mb-6">Contáctame</h2>
+     <h2 class="text-blue-500 font-mono mb-4 text-sm tracking-widest">{config.contact.overline}</h2>
+     <h2 class="text-4xl md:text-5xl font-bold text-slate-100 mb-6">{config.contact.title}</h2>
   </div>
   
   <footer class="mt-32 flex flex-col items-center gap-6">
